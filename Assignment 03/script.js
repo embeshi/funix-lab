@@ -106,12 +106,16 @@ btnSubmit.addEventListener("click", function () {
   }
 });
 
-// Ẩn hiện Job Info
-function view_move(element) {
-  const view_more = element.querySelector(".job-item .view-button");
-  view_more.style.visibility = "visible";
-}
-function view_out(element) {
-  const view_more = element.querySelector(".job-item .view-button");
-  view_more.style.visibility = "hidden";
-}
+// // View More, View Less Button
+const viewMoreBtn = document.querySelector(".viewMoreBtn");
+const viewLessBtn = document.query(".viewLessBtn");
+
+viewMoreBtn.addEventListener("click", function () {
+  viewMoreBtn.classList.add("d-none");
+  viewLessBtn.classList.remove("d-none");
+});
+
+viewLessBtn.addEventListener("click", function () {
+  viewMoreBtn.classList.remove("d-none");
+  viewLessBtn.classList.add("d-none");
+});
