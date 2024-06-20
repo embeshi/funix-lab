@@ -1,0 +1,161 @@
+@import url(font.css);
+
+* {
+  font-family: fontello, sans-serif;
+}
+
+/*Đặt ảnh đại diện avatar*/
+.big-container {
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  top: 44%;
+  left: 43.5%;
+  z-index: 10;
+}
+
+/*Banner section*/
+.section-title {
+  display: grid;
+  position: relative;
+  height: 500px;
+  z-index: -1;
+}
+.title-name-job {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: open_sanssemibold, sans-serif;
+}
+
+.title-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Phần Navigation*/
+.nav-name {
+  font-family: open_sanssemibold, sans-serif;
+  font-size: 20px;
+}
+.nav-job {
+  font-family: open_sanslight, sans-serif;
+  font-size: 12px;
+}
+
+.item1,
+.item2,
+.item4,
+.item5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/*Target and infomation section*/
+/*Target Section*/
+.section-target,
+.section-content-info {
+  width: 50%;
+}
+
+/*Information Section*/
+.section-content-info {
+  background-color: rgb(225, 225, 225);
+}
+
+/*Invidual Skill Infomation Section*/
+.lst li:before {
+  content: "\002D"; /* Sử dụng unicode của dấu - */
+  display: inline-block;
+  width: 1em; /* Đảm bảo khoảng cách giữa icon và nội dung */
+}
+
+.cont-title {
+  text-transform: uppercase;
+}
+
+.time {
+  font-style: italic;
+}
+
+.li-section-info {
+  position: relative;
+}
+
+.ul-section-info .li-section-info::before {
+  content: "\2022"; /* Sử dụng unicode của dấu • (bullet) */
+  color: rgba(0, 13, 255, 0.84); /* Màu của icon */
+  display: inline;
+  position: absolute;
+  left: -35px;
+  top: -18px;
+  font-size: 40px;
+}
+
+/*Tạo thanh bar level kỹ năng và ngôn ngữ*/
+.progress-bar {
+  width: 100%;
+  height: 3px;
+}
+
+/*Section - Chứng chỉ - giải thưởng*/
+.section-cer {
+  background-color: rgb(223, 223, 223);
+}
+
+/*Project Section*/
+/*Footer*/
+.container-footer {
+  background-color: rgb(238, 238, 238);
+}
+
+.container-footer a {
+  text-decoration: none;
+}
+
+/*View more button*/
+#viewMoreBtn {
+  display: none;
+  background-color: khaki;
+}
+
+.section-exp:hover #viewMoreBtn {
+  display: inline-block;
+}
+
+.section-edu:hover #viewMoreBtn {
+  display: inline-block;
+}
+
+.section-act:hover #viewMoreBtn {
+  display: inline-block;
+}
+
+.section-hobby:hover #viewMoreBtn {
+  display: inline-block;
+}
+
+.section-lang:hover #viewMoreBtn {
+  display: inline-block;
+}
+
+.section-skill:hover #viewMoreBtn {
+  display: inline-block;
+}
+
+#viewMoreBtn::before {
+  content: "\25BC"; /* Mã Unicode cho biểu tượng tam giác đen */
+  margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+  color: rgba(0, 0, 0, 0.799); /* Màu sắc của biểu tượng */
+  font-size: 10px;
+}
+
+/*Link dự án*/
+.link {
+  text-decoration: none;
+}
