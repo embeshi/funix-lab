@@ -50,7 +50,7 @@
                     <a
                       href="#Thong-tin"
                       class="item1 text-body m-0 px-3 py-0 fw-bold"
-                      ><i class="icon-user"></i>Thông tin</a
+                      ><i class="icon-user text-primary"></i> Thông tin</a
                     >
                   </li>
                   <li class="nav-item border-end py-sm-3" id="navigation2">
@@ -58,7 +58,7 @@
                       href="#Ly-lich"
                       class="item2 text-body m-0 px-3 py-0 fw-bold"
                     >
-                      <i class="icon-doc-text-inv text-primary">Lý lịch</i>
+                      <i class="icon-doc-text-inv text-primary"></i> Lý lịch
                     </a>
                   </li>
                   <li>
@@ -141,8 +141,8 @@
                 >(+84) 777032xxx
               </p>
               <p class="text-secondary">
-                <span class="text-dark"><strong>Email: </strong></span>a@abc.com
-                <!-- vyvtfx31636n@funix.edu.vn -->
+                <span class="text-dark"><strong>Email: </strong></span>
+                vyvtfx31636@funix.edu.vn
               </p>
               <p class="text-secondary">
                 <span class="text-dark"><strong>Địa chỉ: </strong></span>Bà Rịa
@@ -181,19 +181,12 @@
             </div>
             <button
               type="button"
-              class="viewBtn viewMoreBtn text-muted ms-3 rounded-pill py-0"
+              class="btn text-muted ms-3 rounded-pill py-0"
               data-bs-toggle="collapse"
               data-bs-target="#info1"
+              id="viewMoreBtn"
             >
               View More
-            </button>
-            <button
-              type="button"
-              class="viewBtn viewLessBtn btn text-muted ms-3 rounded-pill py-0 d-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#info1"
-            >
-              View Less
             </button>
             <div class="collapse" id="info1">
               <ul class="ul-section-info list-unstyled ps-0">
@@ -252,19 +245,12 @@
             </div>
             <button
               type="button"
-              class="viewBtn viewMoreBtn text-muted ms-3 rounded-pill py-0"
+              class="btn text-muted ms-3 rounded-pill py-0"
               data-bs-toggle="collapse"
               data-bs-target="#info2"
+              id="viewMoreBtn"
             >
               View More
-            </button>
-            <button
-              type="button"
-              class="viewBtn viewLessBtn btn text-muted ms-3 rounded-pill py-0 d-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#info2"
-            >
-              View Less
             </button>
             <div class="collapse" id="info2">
               <ul class="ul-section-info list-unstyled ps-0">
@@ -310,19 +296,12 @@
             </div>
             <button
               type="button"
-              class="viewBtn viewMoreBtn text-muted ms-3 rounded-pill py-0"
+              class="btn text-muted ms-3 rounded-pill py-0"
               data-bs-toggle="collapse"
               data-bs-target="#info3"
+              id="viewMoreBtn"
             >
               View More
-            </button>
-            <button
-              type="button"
-              class="viewBtn viewLessBtn btn text-muted ms-3 rounded-pill py-0 d-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#info3"
-            >
-              View Less
             </button>
             <div class="collapse" id="info3">
               <ul class="ul-section-info list-unstyled ps-0">
@@ -366,19 +345,12 @@
             </div>
             <button
               type="button"
-              class="viewBtn viewMoreBtn text-muted ms-3 rounded-pill py-0"
+              class="btn text-muted ms-3 rounded-pill py-0"
               data-bs-toggle="collapse"
               data-bs-target="#info4"
+              id="viewMoreBtn"
             >
               View More
-            </button>
-            <button
-              type="button"
-              class="viewBtn viewLessBtn btn text-muted ms-3 rounded-pill py-0 d-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#info4"
-            >
-              View Less
             </button>
             <div class="collapse" id="info4">
               <div
@@ -420,19 +392,12 @@
             </div>
             <button
               type="button"
-              class="viewBtn viewMoreBtn text-muted ms-3 rounded-pill py-0"
+              class="btn text-muted ms-3 rounded-pill py-0"
               data-bs-toggle="collapse"
               data-bs-target="#info5"
+              id="viewMoreBtn"
             >
               View More
-            </button>
-            <button
-              type="button"
-              class="viewBtn viewLessBtn btn text-muted ms-3 rounded-pill py-0 d-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#info5"
-            >
-              View Less
             </button>
             <div class="collapse" id="info5">
               <div class="container m-0 mt-4">
@@ -464,19 +429,12 @@
             </div>
             <button
               type="button"
-              class="viewBtn viewMoreBtn text-muted ms-3 rounded-pill py-0"
+              class="btn text-muted ms-3 rounded-pill py-0"
               data-bs-toggle="collapse"
               data-bs-target="#info6"
+              id="viewMoreBtn"
             >
               View More
-            </button>
-            <button
-              type="button"
-              class="viewBtn viewLessBtn btn text-muted ms-3 rounded-pill py-0 d-none"
-              data-bs-toggle="collapse"
-              data-bs-target="#info6"
-            >
-              View Less
             </button>
             <div class="collapse" id="info6">
               <div class="container m-0 mt-4">
@@ -526,6 +484,7 @@
             Chứng chỉ - Giải thưởng
           </h2>
           <div class="row gap-5" id="subCertificate">
+            <!--CERTIFICATE 1-->
             <div
               class="col-sm-6 row px-0 border-end border-1 border-warning px-0"
               id="cer1"
@@ -544,6 +503,7 @@
                 </ul>
               </div>
             </div>
+            <!--CERTIFICATE 2-->
             <div class="col-sm-6 row" id="cer2">
               <img
                 src="images/Cert_PRF.png"
@@ -553,12 +513,13 @@
                 <h4 class="cont-title mb-2 mt-3 fw-light fs-6">
                   Chứng chỉ lập trình javascript - Funix
                 </h4>
-                <ul>
+                <ul class="lst list-unstyled ps-0 text-secondary">
                   <li>Chứng chỉ thuộc chương trình CCDN</li>
                   <li>GPA: 8.0</li>
                 </ul>
               </div>
             </div>
+            <!--CERTIFICATE 3-->
             <div
               class="col-sm- border-top border-1 border-warning"
               id="cer0"
@@ -587,7 +548,7 @@
         <div class="row justify-content-center align-item-center">
           <!--PROJECT 1-->
           <div class="col-md-4 col-sm-6">
-            <img src="images/project_1.png" width="100%" />
+            <img src="images/project_1.png" width="100%" height="30%" />
             <div class="container border p-0">
               <h4 class="py-2 px-3 border-bottom text-muted">CV cá nhân</h4>
               <div
@@ -616,7 +577,7 @@
               </div>
               <div class="py-2 px-3 border-bottom text-muted d-flex flex-wrap">
                 <p class="col-4">Công nghệ:</p>
-                <p class="col">-HTML, CSS.</p>
+                <p class="col">- HTML, CSS.</p>
               </div>
               <div class="py-2 px-3 border-bottom pb-sm-5">
                 <a class="link" href="digital-cv.html">Link dự án CV cá nhân</a>
@@ -625,10 +586,10 @@
           </div>
           <!--PROJECT 2-->
           <div class="col-md-4 col-sm-6">
-            <img src="images/perfume.jpg" width="100%" />
+            <img src="images/perfume.jpg" width="100%" height="30%" />
             <div class="container border p-0">
               <h4 class="py-2 px-3 border-bottom text-muted">
-                TRANG WEB QUẢN LÝ NƯỚC HOA
+                Trang web quản lý nước hoa
               </h4>
               <div
                 class="py-2 px-3 border-bottom d-sm-flex gap-3 flex-wrap text-muted project-title"
@@ -646,9 +607,7 @@
                   tầng hương nước hoa, công thức của từng sản phẩm,...
                 </p>
               </div>
-              <div
-                class="py-2 px-3 border-bottom text-muted d-flex flex-wrap pb-sm-3"
-              >
+              <div class="py-2 px-3 border-bottom text-muted d-flex flex-wrap">
                 <p class="col-4">Nhiệm vụ:</p>
                 <p class="col">
                   - Quản lý - Thiết kế phát triển - Phân tích thiết kế Database.
@@ -667,10 +626,10 @@
           </div>
           <!--PROJECT 3-->
           <div class="col-md-4 col-sm-6">
-            <img src="images/project_3.png" width="100%" />
+            <img src="images/project_3.png" width="100%" height="30%" />
             <div class="container border p-0">
               <h4 class="py-2 px-3 border-bottom text-muted">
-                TRANG WEB XEM TIN TỨC
+                Trang web xem tin tức
               </h4>
               <div
                 class="py-2 px-3 border-bottom d-sm-flex gap-3 flex-wrap text-muted project-title"
@@ -684,23 +643,25 @@
               <div class="py-2 px-3 border-bottom text-muted d-flex flex-wrap">
                 <p class="col-4">Mô tả:</p>
                 <p class="col">
-                  Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
-                  như kỹ năng nghề nghiệp
+                  Trang web xem tin tức từ nhiều nguồn khác nhau, người dùng có
+                  thể tìm kiếm các tin tức dựa theo các khóa.
                 </p>
               </div>
               <div
-                class="py-2 px-3 border-bottom text-muted d-flex flex-wrap pb-sm-3"
+                class="py-2 px-3 border-bottom text-muted d-flex flex-wrap pb-sm-4"
               >
                 <p class="col-4">Nhiệm vụ:</p>
                 <p class="col">
                   - Phát triển code - Review code - Tối ưu code - Xử lý lỗi.
                 </p>
               </div>
-              <div class="py-2 px-3 border-bottom text-muted d-flex flex-wrap">
+              <div
+                class="py-2 px-3 border-bottom text-muted d-flex flex-wrap pb-sm-3"
+              >
                 <p class="col-4">Công nghệ:</p>
                 <p class="col">- HTML, CSS, Javascript.</p>
               </div>
-              <div class="py-2 px-3 border-bottom pb-sm-5">
+              <div class="py-2 px-3 border-bottom text-muted">
                 <a class="link" href="digital-cv.html"
                   >Link dự án trang web xem tin tức</a
                 >

@@ -17,6 +17,7 @@
 }
 
 /*Banner section*/
+
 .section-title {
   display: grid;
   position: relative;
@@ -119,36 +120,36 @@
 }
 
 /*View more button*/
-.viewMoreBtn {
+#viewMoreBtn {
   display: none;
   background-color: khaki;
 }
 
-.section-exp:hover .viewMoreBtn {
+.section-exp:hover #viewMoreBtn {
   display: inline-block;
 }
 
-.section-edu:hover .viewMoreBtn {
+.section-edu:hover #viewMoreBtn {
   display: inline-block;
 }
 
-.section-act:hover .viewMoreBtn {
+.section-act:hover #viewMoreBtn {
   display: inline-block;
 }
 
-.section-hobby:hover .viewMoreBtn {
+.section-hobby:hover #viewMoreBtn {
   display: inline-block;
 }
 
-.section-lang:hover .viewMoreBtn {
+.section-lang:hover #viewMoreBtn {
   display: inline-block;
 }
 
-.section-skill:hover .viewMoreBtn {
+.section-skill:hover #viewMoreBtn {
   display: inline-block;
 }
 
-.viewMoreBtn::before {
+#viewMoreBtn::before {
   content: "\25BC"; /* Mã Unicode cho biểu tượng tam giác đen */
   margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
   color: rgba(0, 0, 0, 0.799); /* Màu sắc của biểu tượng */

@@ -90,7 +90,7 @@ btnSubmit.addEventListener("click", function () {
   const errormail = document.querySelector(".error-email");
   // Check email
   const checkRegex = emailValue.match(regex);
-  const checkEmail = emailValue == "a@abc.com";
+  const checkEmail = emailValue == "vyvtfx31636@funix.edu.vn";
   // Lấy phần chứa thông tin use
   const sectionContent = document.querySelector("#personal-info");
 
@@ -106,16 +106,22 @@ btnSubmit.addEventListener("click", function () {
   }
 });
 
-// // View More, View Less Button
-const viewMoreBtn = document.querySelector(".viewMoreBtn");
-const viewLessBtn = document.query(".viewLessBtn");
+// // // View More, View Less Button
+// const viewMoreBtn = document.querySelectorAll(".viewMoreBtn");
+// const viewLessBtn = document.querySelectorAll(".viewLessBtn");
 
-viewMoreBtn.addEventListener("click", function () {
-  viewMoreBtn.classList.add("d-none");
-  viewLessBtn.classList.remove("d-none");
-});
+//Hiển thị thay đổi view less - view more khi nhấn nút để mở rộng cửa sổ
+document.addEventListener("DOMContentLoaded", function () {
+  const titles = document.querySelectorAll("#viewMoreBtn");
 
-viewLessBtn.addEventListener("click", function () {
-  viewMoreBtn.classList.remove("d-none");
-  viewLessBtn.classList.add("d-none");
+  titles.forEach((title) => {
+    title.addEventListener("click", function () {
+      const button = this;
+      if (button.getAttribute("aria-expanded") === "true") {
+        button.textContent = "View Less";
+      } else {
+        button.textContent = "View More";
+      }
+    });
+  });
 });
