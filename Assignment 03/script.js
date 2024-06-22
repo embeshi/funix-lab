@@ -119,8 +119,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const button = this;
       if (button.getAttribute("aria-expanded") === "true") {
         button.textContent = "View Less";
+        button.classList.remove("viewMoreBtnIcon");
+        button.classList.add("viewLessBtnIcon")
       } else {
         button.textContent = "View More";
+        button.classList.remove("viewLessBtnIcon");
+        button.classList.add("viewMoreBtnIcon");
       }
     });
   });

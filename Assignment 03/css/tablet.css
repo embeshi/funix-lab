@@ -1,4 +1,40 @@
-@media (min-width: 992px) {
+@media (min-width: 570px) {
+  /*Đặt ảnh đại diện avatar*/
+  .big-container {
+    position: relative;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 44%;
+    /* left: 43.5%; */
+    z-index: 10;
+  }
+
+  /*Banner section*/
+
+  .section-title {
+    display: grid;
+    position: relative;
+    height: 500px;
+    z-index: -1;
+  }
+  .title-name-job {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: open_sanssemibold, sans-serif;
+  }
+
+  .title-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+  }
+
+  
   /* nav bar */
   #nav-bar {
     margin: 0;
